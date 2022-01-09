@@ -1,0 +1,29 @@
+{
+  "name": "team-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cruz801/team-profile.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cruz801/team-profile/issues"
+  },
+  "homepage": "https://github.com/Cruz801/team-profile#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0",
+    "jest": "^27.4.5"
+  }
+}
