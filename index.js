@@ -10,8 +10,9 @@ const Intern = require("./lib/intern")
 
 
 const employees = []
-const promptUser = () => {
-    inquirer.prompt ([
+const promptUser =async () => {
+    while (true){
+    const emp = await inquirer.prompt ([
         {
             type: 'input',
             name: 'title',
@@ -100,9 +101,27 @@ const promptUser = () => {
                     return false
                 }
             }
+        },
+        {
+            type: 'confirm',
+            name: 'confirmAddEmployee',
+            message: 'Would like to add an employee?'
         }
-    ])
+    ]);
+    employees.push (emp);
+    if (!emp.confirmAddEmployee)
+        return;
+    }
+};
+
+const main = async ()=>{
+    await promptUser();
+   // console.log(employees);
+    const html = generateHTML(employees);
+  //  console.log(html);
+  fs.writeFile ("employees.html", html, (err)=>{
+    // console.log()
+  });
 }
-//as a user what prompts do you watn to see first
-// function init();
-promptUser();
+
+main();
