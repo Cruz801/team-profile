@@ -9,3 +9,15 @@
 * npm init
 * npm install inquirer
 * node index to run app
+
+## Languages
+* JavaScript
+* HTML
+* Node
+* jest
+* inquirer
+
+## Visual
+![Screenshot (61)](https://user-images.githubusercontent.com/92316250/149579391-c5c4bff1-3553-4c26-8339-225507377ade.png)
+
+https://watch.screencastify.com/v/FJZurcMzIwDqtvpQEn4b
